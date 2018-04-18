@@ -1,0 +1,259 @@
+/* Шрифты */
+
+/* Служебные */
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0;
+	border:0;
+	height: 1px; 
+	width: 1px; 
+	overflow: hidden;
+}
+
+/* Принудительное наследование box-sizing: border-box для flex-элементов */
+
+html {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+* {
+	-webkit-box-sizing: inherit;
+	        box-sizing: inherit;
+}
+
+.content-box-component {
+	-webkit-box-sizing: content-box;
+	        box-sizing: content-box;
+}
+
+/*******************************/
+
+body {
+	margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "PT Sans", "Verdana", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+	line-height: 1.8rem;
+}
+
+.container {
+	position: relative;
+	width: 66vw;
+  margin: 0 auto;
+}
+
+.container a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* header */
+
+.upper-header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-weight: 700;
+	font-size: 1.1rem;
+	line-height: 1.8rem;
+	color: gray;
+}
+
+.upper-header p {
+	position: relative;
+	margin-left: 3rem;
+}
+
+p.header-name{
+	margin-left: 0;
+	padding: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+	color: black;
+	font-size: 1.2rem;
+	line-height: 1.3rem;
+	border: 0.1rem solid gray;
+	border-radius: 0.5rem;
+}
+
+.header-name span {
+	text-transform: uppercase;
+	font-size: 1.5em;
+	line-height: 1.6em;
+}
+
+.adress::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -3rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	background-image: url("../img/icons/location-outline.svg");
+	opacity: 0.4;
+	background-position: center;
+	background-size: cover;
+}
+
+.hours::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -3rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	background-image: url("../img/icons/time.svg");
+	opacity: 0.4;
+	background-position: center;
+	background-size: cover;
+}
+
+.email::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -2rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-image: url("../img/icons/mail.svg");
+	opacity: 0.4;
+	background-position: center;
+	background-size: cover;
+}
+
+.phone::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -2rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-image: url("../img/icons/phone-outline.svg");
+	opacity: 0.4;
+	background-position: center;
+	background-size: cover;
+	transform: rotate(90deg);
+}
+
+.phone-skype::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -2rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-image: url("../img/icons/social-skype-outline.svg");
+	opacity: 0.4;
+	background-position: center;
+	background-size: cover;
+}
+
+.lower-header {
+	position: relative;
+	z-index: 100;
+	background-color: darkgreen;
+}
+
+.main-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+	color: white;
+	font-size: 1rem;
+	line-height: 1rem;
+}
+
+.main-navigation li {
+	flex-grow: 1;
+	list-style: none;
+	text-align: center;
+}
+
+.main-navigation a {
+	display: block;
+	padding: 1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.main-navigation a:hover,
+.main-navigation a:active {
+	background-color: forestgreen;
+}
+
+.main-navigation-submenu {
+	display: none;
+	position: absolute;
+	padding-left: 0;
+	background-color: gray;
+}
+
+.main-navigation-submenu li {
+	text-align: left;
+}
+
+.main-navigation-news:hover .submenu-news {
+	display: block;
+}
+
+.main-navigation-about:hover .submenu-about-us {
+	display: block;
+}
+
+.main-navigation-services:hover .submenu-tariffs-services {
+	display: block;
+}
+
+.main-navigation-documents:hover .submenu-documents {
+	display: block;
+}
+
+/* index main*/
+
+.container h1,
+.container h2 {
+	text-transform: uppercase;
+}
+
+.actual {
+	padding-top: 3rem;
+}
+
+.actual-flex-container {
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.notifications {
+	flex-basis: 60%;
+	min-width: 15rem;
+	position: relative;
+	margin-top: 3.5rem;
+	margin-right: 1.5rem;
+	padding: 1rem;
+	padding-top: 2rem;
+	border: 0.1rem solid gray;
+	border-radius: 1rem;
+}
+
+.notifications-headline {
+	position: absolute;
+	top: -2.5rem;
+	left: 4rem;
+	background-color: white;
+	padding: 0 0.7rem;
+}
+
+.news {
+	flex-basis: 38%;
+	min-width: 15rem;
+	padding: 1rem;
+}
