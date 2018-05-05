@@ -60,7 +60,7 @@ body {
 	flex-shrink: 100;
 }
 
-.container a {
+a {
 	color: inherit;
 	text-decoration: none;
 }
@@ -68,6 +68,18 @@ body {
 .container a:hover,
 .container a:focus {
 	text-decoration: underline;
+}
+
+.notice {
+	font-size: 1rem;
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+.caption {
+	font-style: italic;
 }
 
 /* header */
@@ -360,7 +372,7 @@ main>section {
 	position: relative;
 	margin-top: 3.5rem;
 	margin-right: 1.5rem;
-	padding: 1rem;
+	padding: 2rem;
 	padding-top: 2rem;
 	border: 0.1rem solid gray;
 	border-radius: 1rem;
@@ -373,6 +385,10 @@ main>section {
 	left: 4rem;
 	background-color: white;
 	padding: 0 0.7rem;
+}
+
+.notifications li {
+	margin: 1.5rem 0;
 }
 
 .news {
@@ -389,13 +405,31 @@ main>section {
 	background-color: steelblue;
 }
 
+.tariffs-services table {
+	border-collapse: collapse;
+}
+
+.tariffs-services th {
+	background-color: lightblue;
+}
+
+.tariffs-services table tr:nth-of-type(2n+1) {
+	background-color: lightcyan;
+	margin-right: 2rem;
+}
+
+.tariffs-services td {
+	margin-right: 5rem;
+}
+
 .documents .section-headline {
 	background-color: blueviolet;
 }
 
 .main-documents {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .document-vidget {
@@ -438,6 +472,7 @@ main>section {
 	justify-content: space-around;
 	align-items: center;
 	height: 47%;
+	padding: 0 2rem;
 	text-align: center;
 	background-color: forestgreen;
 	box-shadow: 0.3rem 0.3rem 1rem 0 gray;
@@ -492,15 +527,80 @@ a.button:active {
 	background-repeat: no-repeat;
 }
 
+.information-disclosure ul {
+	width: 90%;
+	list-style: none;
+}
+
+.information-disclosure li {
+	position: relative;
+	margin-left: 26rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.information-disclosure span {
+	color: firebrick;
+}
+
+.information-disclosure li::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: -4rem;
+	top: 0.5rem;
+	width: 3rem;
+	height: 3rem;
+	background-image: url("../img/icons/info_icon.svg");
+}
+
 .contacts .section-headline {
 	background-color: olive;
 }
 
 /* footer */
 
-.main-footer {
+.main-footer,
+.lower-footer {
 	display: flex;
 	color: white;
-	text-transform: uppercase;
+	font-size: 1rem;
 	background-color: darkslategray;
+}
+
+.main-footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-useful-links {
+	flex-basis: 40rem;
+}
+
+.footer-interesting-links {
+	flex-basis: 30rem;
+}
+
+.main-footer h3 {
+	text-transform: none;
+	color: white;
+}
+
+.lower-footer {
+	font-family: "Georgia", serif;
+}
+
+.footer-imprint {
+	border-top: 1px solid olive;
+}
+
+.footer-imprint h2 {
+	position: relative;
+	color: olive;
+}
+
+.footer-imprint p {
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: olive;
 }
