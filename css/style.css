@@ -108,11 +108,6 @@ a {
 	color: gray;
 }
 
-.upper-header-content p {
-	position: relative;
-	margin-left: 3rem;
-}
-
 .upper-header-image {
 	width: 18rem;
 	height: 17rem;
@@ -125,12 +120,13 @@ a {
 }
 
 .upper-header-headline {
+	flex-basis: 35%;
 	position: relative;
 	margin: 0;
 	margin-top: 3rem;
 	color: forestgreen;
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	line-height: 2.5rem;
 	text-transform: uppercase;
 	letter-spacing: 0.3rem;
@@ -149,7 +145,7 @@ a {
 
 .adress-city {
 	text-transform: uppercase;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	letter-spacing: 0.3rem;
 	line-height: 3rem;
 	color: forestgreen;
@@ -159,7 +155,7 @@ a {
 	display: flex;
 	margin: 0.7rem;
 	padding: 0.4rem;
-	font-size: 1.3rem;
+	font-size: 1rem;
 	line-height: 1.4rem;
 	letter-spacing: 0.2rem;
 	text-align: center;
@@ -217,9 +213,6 @@ a {
 	background-size: cover;
 }
 
-
-
-
 */
 
 .lower-header {
@@ -247,7 +240,7 @@ a {
 
 .main-navigation a {
 	display: block;
-	padding: 1rem;
+	padding: 1rem 0.5rem;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -333,8 +326,10 @@ main>section {
 }
 
 .notifications {
-	flex-basis: 60%;
-	min-width: 15rem;
+	flex-basis: 50%;
+	flex-grow: 2;
+	flex-shrink: 1;
+	min-width: 30rem;
 	position: relative;
 	margin-top: 3.5rem;
 	margin-right: 1.5rem;
@@ -358,8 +353,10 @@ main>section {
 }
 
 .news {
-	flex-basis: 38%;
-	min-width: 15rem;
+	flex-basis: 30%;
+	flex-grow: 1;
+	flex-shrink: 2;
+	min-width: 20rem;
 	padding: 1rem;
 }
 
@@ -523,6 +520,7 @@ a.button:active {
 
 .information-disclosure ul {
 	width: 90%;
+	min-width: 50rem;
 	list-style: none;
 }
 
