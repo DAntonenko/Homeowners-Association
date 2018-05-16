@@ -130,16 +130,16 @@ a {
 	margin-top: 3rem;
 	color: forestgreen;
 	text-align: center;
-	font-size: 1.7rem;
-	line-height: 3rem;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
 	text-transform: uppercase;
 	letter-spacing: 0.3rem;
 	word-spacing: 1rem;
 }
 
 .upper-header-headline span {
-	font-size: 4rem;
-	line-height: 4.5rem;
+	font-size: 2.5rem;
+	line-height: 3.5rem;
 }
 
 .adress {
@@ -149,7 +149,7 @@ a {
 
 .adress-city {
 	text-transform: uppercase;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	letter-spacing: 0.3rem;
 	line-height: 3rem;
 	color: forestgreen;
@@ -159,7 +159,7 @@ a {
 	display: flex;
 	margin: 0.7rem;
 	padding: 0.4rem;
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	line-height: 1.4rem;
 	letter-spacing: 0.2rem;
 	text-align: center;
@@ -176,7 +176,7 @@ a {
 }
 
 .adress-table-street {
-	font-size: 0.8rem;
+	font-size: 0.7rem;
 	line-height: 1.2rem;
 }
 
@@ -217,45 +217,9 @@ a {
 	background-size: cover;
 }
 
-.email::before {
-	content: "";
-	display: block;
-	position: absolute;
-	left: -2rem;
-	width: 1.5rem;
-	height: 1.5rem;
-	background-image: url("../img/icons/mail.svg");
-	opacity: 0.4;
-	background-position: center;
-	background-size: cover;
-}
 
-.phone::before {
-	content: "";
-	display: block;
-	position: absolute;
-	left: -2rem;
-	width: 1.5rem;
-	height: 1.5rem;
-	background-image: url("../img/icons/phone-outline.svg");
-	opacity: 0.4;
-	background-position: center;
-	background-size: cover;
-	transform: rotate(90deg);
-}
 
-.phone-skype::before {
-	content: "";
-	display: block;
-	position: absolute;
-	left: -2rem;
-	width: 1.5rem;
-	height: 1.5rem;
-	background-image: url("../img/icons/social-skype-outline.svg");
-	opacity: 0.4;
-	background-position: center;
-	background-size: cover;
-}
+
 */
 
 .lower-header {
@@ -301,6 +265,7 @@ a {
 }
 
 .main-navigation-submenu li {
+	display: none;
 	text-align: left;
 }
 
@@ -328,7 +293,8 @@ main>section {
 
 .container h1,
 .container h2,
-.container h3 {
+.container h3,
+.container h4 {
 	text-transform: uppercase;
 }
 
@@ -397,8 +363,36 @@ main>section {
 	padding: 1rem;
 }
 
+.news article {
+	margin-bottom: 3rem;
+}
+
+.news time {
+	font-style: italic;
+	color: forestgreen;
+}
+
+.news h4 {
+	margin: 0.5rem 0;
+}
+
 .about-us .section-headline {
 	background-color: chocolate;
+}
+
+.general-information iframe {
+	float: left;
+	margin: 0 3rem 2rem 0;
+	box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+}
+
+.person {
+	display: flex;
+}
+
+.person img {
+	margin: 0 2rem 3rem 0;
+	box-shadow: 0.3rem 0.3rem 1rem 0 gray;
 }
 
 .tariffs-services .section-headline {
@@ -556,6 +550,55 @@ a.button:active {
 
 .contacts .section-headline {
 	background-color: olive;
+}
+
+.contacts-communication-links {
+	margin-left: 2.5rem;
+}
+
+.email::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-image: url("../img/icons/mail.svg");
+	opacity: 0.4;
+	background-position: center;
+	background-size: cover;
+}
+
+.phone::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-image: url("../img/icons/phone-outline.svg");
+	opacity: 0.4;
+	background-position: center;
+	background-size: cover;
+	transform: rotate(90deg);
+}
+
+.phone-skype::before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-image: url("../img/icons/social-skype-outline.svg");
+	opacity: 0.4;
+	background-position: center;
+	background-size: cover;
+}
+
+.contacts-map {
+	margin: 2.5rem 0 0 5rem;
+	box-shadow: 0.3rem 0.3rem 1rem 0 gray;
 }
 
 /* footer */
