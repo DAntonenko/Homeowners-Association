@@ -97,10 +97,8 @@ a {
 	text-decoration: none;
 }
 
-.upper-header-content {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+.upper-header-content,
+.upper-header .right-column {
 	font-family: "Georgia", serif;
 	font-weight: 700;
 	font-size: 1.1rem;
@@ -114,38 +112,37 @@ a {
 	background-image: url("../img/the_two_towers.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin: 0.5rem 0;
+	margin: 0.5rem 0 0.5rem 3rem;
 	border-radius: 50%;
-	box-shadow: 0.3rem 0.3rem 1rem 0;
+	box-shadow: 0.3rem 0.3rem 1rem 0 gray;
 }
 
 .upper-header-headline {
-	flex-basis: 35%;
 	position: relative;
 	margin: 0;
-	margin-top: 3rem;
+	margin-top: 5rem;
 	color: forestgreen;
 	text-align: center;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	line-height: 2.5rem;
 	text-transform: uppercase;
-	letter-spacing: 0.3rem;
-	word-spacing: 1rem;
+	letter-spacing: 0.2rem;
+	word-spacing: 0.5rem;
 }
 
 .upper-header-headline span {
-	font-size: 2.5rem;
+	font-size: 2.7rem;
 	line-height: 3.5rem;
 }
 
 .adress {
-	margin-top: 2rem;
+	margin: 2rem 3rem 0 0;
 	text-align: center;
 }
 
 .adress-city {
 	text-transform: uppercase;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	letter-spacing: 0.3rem;
 	line-height: 3rem;
 	color: forestgreen;
@@ -548,6 +545,10 @@ a.button:active {
 
 .contacts .section-headline {
 	background-color: olive;
+}
+
+.contacts-info {
+	margin-left: 1rem;
 }
 
 .contacts-communication-links {
