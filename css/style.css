@@ -78,8 +78,32 @@ a {
 	text-decoration: underline;
 }
 
+.attention-color {
+	color: firebrick;
+}
+
 .caption {
 	font-style: italic;
+}
+
+.arrow-up {
+	content: "";
+	position: fixed;
+	bottom: 3rem;
+	left: 2rem;
+	width: 5rem;
+	height: 5rem;
+	z-index: 100;
+	background-image: url("../img/icons/icon_arrow-up.png");
+	background-size: contain;
+	border-radius: 50%;
+	opacity: 0.1;
+}
+
+.arrow-up:hover,
+.arrow-up:active {
+	opacity: 0.6;
+	background-color: forestgreen;
 }
 
 /* header */
@@ -286,10 +310,6 @@ main>section {
 .container h3,
 .container h4 {
 	text-transform: uppercase;
-}
-
-.container h3 {
-	color: firebrick;
 }
 
 .section-headline {
@@ -559,7 +579,7 @@ a.button:active {
 	content: "";
 	display: block;
 	position: absolute;
-	left: 0rem;
+	left: 0.8rem;
 	width: 1.5rem;
 	height: 1.5rem;
 	background-image: url("../img/icons/mail.svg");
@@ -572,7 +592,7 @@ a.button:active {
 	content: "";
 	display: block;
 	position: absolute;
-	left: 0rem;
+	left: 0.8rem;
 	width: 1.5rem;
 	height: 1.5rem;
 	background-image: url("../img/icons/phone-outline.svg");
@@ -586,7 +606,7 @@ a.button:active {
 	content: "";
 	display: block;
 	position: absolute;
-	left: 0rem;
+	left: 0.8rem;
 	width: 1.5rem;
 	height: 1.5rem;
 	background-image: url("../img/icons/social-skype-outline.svg");
