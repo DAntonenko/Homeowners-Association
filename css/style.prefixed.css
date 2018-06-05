@@ -44,20 +44,26 @@ body {
 }
 
 .flex-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 .container {
-	flex-shrink: 1;
+	-ms-flex-negative: 1;
+	    flex-shrink: 1;
 	position: relative;
-	flex-basis: 67vw;
+	-ms-flex-preferred-size: 67vw;
+	    flex-basis: 67vw;
   margin: 0 auto;
 }
 
 .left-column,
 .right-column {
-	flex-basis: 16vw;
-	flex-shrink: 100;
+	-ms-flex-preferred-size: 16vw;
+	    flex-basis: 16vw;
+	-ms-flex-negative: 100;
+	    flex-shrink: 100;
 }
 
 a {
@@ -138,7 +144,8 @@ a {
 	background-size: cover;
 	margin: 0.5rem 0 0.5rem 3rem;
 	border-radius: 50%;
-	box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	-webkit-box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	        box-shadow: 0.3rem 0.3rem 1rem 0 gray;
 }
 
 .upper-header-headline {
@@ -173,6 +180,8 @@ a {
 }
 
 .adress-table {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin: 0.7rem;
 	padding: 0.4rem;
@@ -183,11 +192,14 @@ a {
 	color: white;
 	background-color: forestgreen;
 	border-radius: 0.5rem;
-	box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	-webkit-box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	        box-shadow: 0.3rem 0.3rem 1rem 0 gray;
 }
 
 .adress-table-words {
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 	padding: 0.3rem 0.7rem 0 0.7rem;
 	white-space: nowrap;
 }
@@ -237,7 +249,10 @@ a {
 */
 
 .lower-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+  position: -webkit-sticky;
   position: sticky;
 	top: 0;
 	z-index: 100;
@@ -245,8 +260,11 @@ a {
 }
 
 .main-navigation {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	padding-left: 0;
 	color: white;
 	font-size: 1rem;
@@ -254,7 +272,9 @@ a {
 }
 
 .main-navigation li {
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 	list-style: none;
 	text-align: center;
 }
@@ -313,8 +333,11 @@ main>section {
 }
 
 .section-headline {
+	position: -webkit-sticky;
 	position: sticky;
 	top: 3rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	z-index: 10;
 }
@@ -332,20 +355,31 @@ main>section {
 }
 
 .actual {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding-top: 3rem;
 }
 
 .actual-flex-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: flex-start;
-	flex-wrap: wrap;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .notifications {
-	flex-basis: 50%;
-	flex-grow: 2;
-	flex-shrink: 1;
+	-ms-flex-preferred-size: 50%;
+	    flex-basis: 50%;
+	-webkit-box-flex: 2;
+	    -ms-flex-positive: 2;
+	        flex-grow: 2;
+	-ms-flex-negative: 1;
+	    flex-shrink: 1;
 	min-width: 30rem;
 	position: relative;
 	margin-top: 3.5rem;
@@ -354,7 +388,8 @@ main>section {
 	padding-top: 2rem;
 	border: 0.1rem solid gray;
 	border-radius: 1rem;
-	box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	-webkit-box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	        box-shadow: 0.3rem 0.3rem 1rem 0 gray;
 }
 
 .notifications-headline {
@@ -370,9 +405,13 @@ main>section {
 }
 
 .news {
-	flex-basis: 30%;
-	flex-grow: 1;
-	flex-shrink: 2;
+	-ms-flex-preferred-size: 30%;
+	    flex-basis: 30%;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	-ms-flex-negative: 2;
+	    flex-shrink: 2;
 	min-width: 20rem;
 	padding: 1rem;
 }
@@ -397,16 +436,20 @@ main>section {
 .general-information iframe {
 	float: left;
 	margin: 0 3rem 2rem 0;
-	box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	-webkit-box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	        box-shadow: 0.3rem 0.3rem 1rem 0 gray;
 }
 
 .person {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
 .person img {
 	margin: 0 2rem 3rem 0;
-	box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	-webkit-box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	        box-shadow: 0.3rem 0.3rem 1rem 0 gray;
 }
 
 .tariffs-services .section-headline {
@@ -435,15 +478,27 @@ main>section {
 }
 
 .main-documents {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 }
 
 .document-vidget {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	width: 20rem;
 	height: 30rem;
 	margin: 3rem;
@@ -454,12 +509,17 @@ main>section {
 }
 
 .document-preview img {
-	box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	-webkit-box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	        box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	-webkit-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
 }
 
 .document-preview img:hover {
-	transform: rotate(10deg) scaleY(1.2) scaleX(1.2);
+	-webkit-transform: rotate(10deg) scaleY(1.2) scaleX(1.2);
+	    -ms-transform: rotate(10deg) scaleY(1.2) scaleX(1.2);
+	        transform: rotate(10deg) scaleY(1.2) scaleX(1.2);
 }
 
 .document-reference::before {
@@ -475,15 +535,24 @@ main>section {
 
 .document-reference {
 	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	height: 47%;
 	padding: 0 2rem;
 	text-align: center;
 	background-color: forestgreen;
-	box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	-webkit-box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	        box-shadow: 0.3rem 0.3rem 1rem 0 gray;
 }
 
 .document-reference a {
@@ -504,22 +573,21 @@ main>section {
 	margin-bottom: 1rem;
 	padding-top: 0.4rem;
 	color: white;
-	1background-color: blueviolet;
-	background-image: linear-gradient(mediumpurple, blueviolet);
+	background-color: blueviolet;
 	border-radius: 2rem;
-	box-shadow: 0.3rem 0.3rem 1.5rem black;
+	-webkit-box-shadow: 0.3rem 0.3rem 1.5rem black;
+	        box-shadow: 0.3rem 0.3rem 1.5rem black;
 }
 
 a.button:hover,
 a.button:focus {
 	text-decoration: none;
-	1background-color: mediumpurple;
-	background-image: linear-gradient(mediumorchid, mediumpurple);
+	background-color: mediumpurple;
 }
 
 a.button:active {
-	background-image: linear-gradient(blueviolet, mediumpurple);
-	box-shadow: inset 0.3rem 0.3rem 1.5rem black;
+	-webkit-box-shadow: inset 0.3rem 0.3rem 1.5rem black;
+	        box-shadow: inset 0.3rem 0.3rem 1.5rem black;
 }
 
 .information-disclosure .section-headline {
@@ -598,7 +666,9 @@ a.button:active {
 	opacity: 0.4;
 	background-position: center;
 	background-size: cover;
-	transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
 }
 
 .phone-skype::before {
@@ -616,13 +686,16 @@ a.button:active {
 
 .contacts-map {
 	margin: 2.5rem 0 0 5rem;
-	box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	-webkit-box-shadow: 0.3rem 0.3rem 1rem 0 gray;
+	        box-shadow: 0.3rem 0.3rem 1rem 0 gray;
 }
 
 /* footer */
 
 .main-footer,
 .lower-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	color: white;
 	font-size: 1rem;
@@ -630,16 +703,22 @@ a.button:active {
 }
 
 .main-footer .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .footer-useful-links {
-	flex-basis: 40rem;
+	-ms-flex-preferred-size: 40rem;
+	    flex-basis: 40rem;
 }
 
 .footer-interesting-links {
-	flex-basis: 30rem;
+	-ms-flex-preferred-size: 30rem;
+	    flex-basis: 30rem;
 }
 
 .main-footer h3 {
