@@ -67,7 +67,7 @@ a {
 
 .container a:hover,
 .container a:focus {
-	text-decoration: underline;
+	border-bottom: 0.1rem solid firebrick;
 }
 
 .notice {
@@ -75,7 +75,7 @@ a {
 }
 
 .underlined {
-	text-decoration: underline;
+	border-bottom: 0.1rem solid firebrick;
 }
 
 .attention-color {
@@ -97,7 +97,7 @@ a {
 	background-image: url("../img/icons/icon_arrow-up.png");
 	background-size: contain;
 	border-radius: 50%;
-	opacity: 0.1;
+	opacity: 0.2;
 }
 
 .arrow-up:hover,
@@ -269,6 +269,7 @@ a {
 .main-navigation a:hover,
 .main-navigation a:active {
 	background-color: mediumseagreen;
+	border: none;
 }
 
 .main-navigation-submenu {
@@ -491,11 +492,6 @@ main>section {
 	color: white;
 }
 
-.document-reference a:hover,
-.document-reference a:focus {
-	text-decoration: underline;
-}
-
 .button {
 	display: block;
 	width: 70%;
@@ -504,8 +500,7 @@ main>section {
 	margin-bottom: 1rem;
 	padding-top: 0.4rem;
 	color: white;
-	1background-color: blueviolet;
-	background-image: linear-gradient(mediumpurple, blueviolet);
+	background-color: blueviolet;
 	border-radius: 2rem;
 	box-shadow: 0.3rem 0.3rem 1.5rem black;
 }
@@ -513,8 +508,8 @@ main>section {
 a.button:hover,
 a.button:focus {
 	text-decoration: none;
-	1background-color: mediumpurple;
-	background-image: linear-gradient(mediumorchid, mediumpurple);
+	background-color: mediumpurple;
+	border: none;
 }
 
 a.button:active {
@@ -616,7 +611,6 @@ a.button:active {
 
 .contacts-map {
 	margin: 2.5rem 0 0 5rem;
-	box-shadow: 0.3rem 0.3rem 1rem 0 gray;
 }
 
 /* footer */
