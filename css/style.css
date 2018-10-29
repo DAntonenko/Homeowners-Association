@@ -924,8 +924,8 @@ a.button:active {
 
 @media (max-width: 799px) and (min-width: 0px) {
 	body {
-		1overflow-x: hidden;
-	  margin-right: calc(-1 * (100vw - 105%));
+		overflow-x: hidden;
+	  /* margin-right: calc(-1 * (100vw - 105%)); */
 		font-size: 0.8rem;
 		line-height: 1.2rem;
 	}
@@ -1054,7 +1054,6 @@ a.button:active {
 	.lower-footer h2 {
 		font-size: 1rem;
 		line-height: 2rem;
-		text-align: center;
 	}
 
 	.lower-footer p {
