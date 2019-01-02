@@ -1061,6 +1061,12 @@ a.button:active {
 	}
 }
 
-@media (max-width: 374px) and (min-width: 320px) {
+/* temporal */
 
+.notifications {
+	width: 70vw;
+}
+
+.eeriness {
+	width: 100%
 }
